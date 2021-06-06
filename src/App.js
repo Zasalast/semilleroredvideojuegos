@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footers from "./components/footer/Footer";
+import Headers from "./components/header/Header";
+import { SectionBody } from "./components/section/sectionBody";
 
-function App() {
+import { Layout, Menu, Breadcrumb } from "antd";
+import {
+  UserOutlined,
+  LaptopOutlined,
+  NotificationOutlined,
+} from "@ant-design/icons";
+import Aside from "./components/aside/Aside";
+
+const { SubMenu } = Menu;
+const { Sider, Content } = Layout;
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Layout>
+        <Headers className="App-nav" />
+        <Layout>
+          <Content>
+            {" "}
+            <SectionBody></SectionBody>
+          </Content>
+          {/*  <Aside /> */}
+        </Layout>
+        <Footers style={{ textAlign: "center" }}></Footers>
+      </Layout>
     </div>
   );
-}
+};
 
 export default App;

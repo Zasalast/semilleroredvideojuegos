@@ -1,0 +1,26 @@
+.App-nav {
+  background-color: #5ad558;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+.App-logo {
+  height: 9.5vmin;
+  pointer-events: none;
+  background: white;
+  border-radius: 50%;
+}
+.App-header {
+ 
+  min-height: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+ 
+}
