@@ -1,12 +1,14 @@
 .App-nav {
-  background-color: #5ad558;
+  background-color: rgb(3,204,108);;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: rgb(255, 255, 255);
+  border-left: 100px;
+  
 }
 .App-logo {
   height: 9.5vmin;
@@ -23,4 +25,14 @@
   justify-content: right;
   font-size: calc(10px + 2vmin);
  
+}
+a{/* border: 7px solid rgb(3,168,63);
+  border-radius: 5%; */
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+height: 10vh;}
+img{
+  margin-right: 30px;
 }

@@ -1,5 +1,5 @@
 import "../../servicesOffered/ServicesOffered";
-import { Card, Col, Row, Avatar } from "antd";
+import { Card, Col, Row, Avatar ,Divider} from "antd";
 import {
   EditOutlined,
   EllipsisOutlined,
@@ -11,70 +11,84 @@ import red_trabaje from "./../../../assets/trabaje.png";
 import redesempresariales from "./../../../assets/redes-empresariales.png";
 const { Meta } = Card;
 const Metodologia = () => {
-  return (
-    <>
-      <h1>Metodología propuesta</h1>
-      <div className="site-card-wrapper">
+  return ( <Row>
+          <Col span={12} offset={6} ><h1>Metodología propuesta</h1></Col>
         {" "}
+     <div className="site-card-wrapper">  <Col span={24} >
         <Row gutter={16}>
-          {" "}
-          <a href="https://sites.google.com/view/redes3d/qui%C3%A9nes-somos">
-            <Card
-              style={{ width: 300 }}
-              cover={<img alt="example" src={red_videojuegos} />}
-              actions={[
-                <SettingOutlined key="setting" />,
-                <EditOutlined key="edit" />,
-                <EllipsisOutlined key="ellipsis" />,
-              ]}
-            >
-              <Meta
-                avatar={
-                  <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                }
-                title="¿Quiénes Somos?"
-                description="This is the description"
-              />
-            </Card>
-          </a>
-          <Card
-            style={{ width: 300 }}
-            cover={<img alt="example" src={red_trabaje} />}
-            actions={[
-              <SettingOutlined key="setting" />,
-              <EditOutlined key="edit" />,
-              <EllipsisOutlined key="ellipsis" />,
-            ]}
-          >
-            <Meta
-              avatar={
-                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-              }
-              title="¿Qué hacemos? "
-              description="This is the description"
-            />
-          </Card>
-          <Card
-            style={{ width: 300 }}
-            cover={<img alt="example" src={redesempresariales} />}
-            actions={[
-              <SettingOutlined key="setting" />,
-              <EditOutlined key="edit" />,
-              <EllipsisOutlined key="ellipsis" />,
-            ]}
-          >
-            <Meta
-              avatar={
-                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-              }
-              title="Trabaja con Nosotros"
-              description="This is the description"
-            />
-          </Card>
-          ,
+         <Col span={8}>  
+          <ul>
+            <h4>FASE I</h4>
+              <li>
+                
+Registro Cvlab.
+</li>
+              <li>
+                
+Presentación del Grupo de Investigación GITUA.
+</li>
+              <li>
+                
+Bases de Datos Especializadas.
+</li>
+              <li>
+                
+Mapas conceptuales.
+</li>
+              <li>
+                
+Estado del Arte.
+</li>
+              <li>
+                
+Formas de Investigar y producción de conocimientos.
+</li>
+              <li>
+             Participación en Proyectos de investigación.   
+</li>
+              </ul></Col>
+        <Col span={8}>    <ul>
+            <h4>FASE II</h4>
+
+<li>Actualización del Cvlab</li>
+              <li>
+                
+Socialización formato de presentación de proyectos UA.
+</li>
+              <li>
+                
+Instrumentos de Recolección de Datos.
+</li>
+              <li>
+                
+Redes de Investigación.
+</li>
+              <li>
+                
+Acompañamiento a proyectos de investigación.
+</li>
+              <li>
+                
+              Proyectos de investigación.
+</li>
+            </ul></Col>
+           <Col span={8}> <ul>
+               <h4>FASE III</h4> 
+  <li>Elaboración de Artículos.</li>
+
+  <li>Participación en convocatorias.</li>
+
+  <li>Concursos y congresos.</li>
+
+  <li>Participación en Proyectos de Gestion de Redes de Datos.</li>
+
+  <li>Participación en Proyectos de desarrollo de Videojuegos.</li>
+</ul>
+          </Col>
         </Row>
-      </div>
-    </>
+      </Col> 
+    </div>
+</Row>
   );
 };
 export default Metodologia;

@@ -16,17 +16,15 @@ const { Sider, Content } = Layout;
 const App = () => {
   return (
     <div>
-      <Layout>
-        <Headers className="App-nav" />
-        <Layout>
-          <Content>
-            {" "}
-            <SectionBody></SectionBody>
-          </Content>
-          {/*  <Aside /> */}
-        </Layout>
-        <Footers style={{ textAlign: "center" }}></Footers>
-      </Layout>
+      <Headers />
+
+      <Content>
+        {" "}
+        <SectionBody></SectionBody>
+      </Content>
+      {/*  <Aside /> */}
+
+      <Footers style={{ textAlign: "center" }}></Footers>
     </div>
   );
 };
